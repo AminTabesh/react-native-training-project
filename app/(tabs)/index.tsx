@@ -5,7 +5,6 @@ import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
 import useFetch from "@/services/useFetch";
 import { useRouter } from "expo-router";
-import React from "react";
 import {
   ActivityIndicator,
   FlatList,
@@ -57,12 +56,14 @@ export default function Index() {
               keyExtractor={(item) => item.id.toString()}
               numColumns={3}
               columnWrapperStyle={{
-                justifyContent: "flex-start",
-                gap: 10,
-                marginBottom: 45,
+                justifyContent: "center",
+                gap: 16,
               }}
               scrollEnabled={false}
-              contentContainerStyle={{ paddingBottom: 30, paddingLeft: 10 }}
+              contentContainerStyle={{
+                paddingBottom: 100,
+                rowGap: 16,
+              }}
             />
           </View>
         )}

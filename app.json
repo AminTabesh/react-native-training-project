@@ -16,7 +16,10 @@
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "config": {
+        "sdkPath": "D:\\android-studio"
+      }
     },
     "web": {
       "bundler": "metro",
